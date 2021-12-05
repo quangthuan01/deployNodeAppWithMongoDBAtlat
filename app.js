@@ -8,6 +8,7 @@ require('dotenv').config();
 const mongoose = require('mongoose');
 var mangaAPI = require('./routes/Manga_API');
 
+
 mongoose.connect(process.env.MONGODB,{useNewUrlParser: true, useUnifiedTopology: true})
 .then((res)=> console.log(">>>>>DB connected"))
 .catch((err)=> console.error("Connect fail", err));
