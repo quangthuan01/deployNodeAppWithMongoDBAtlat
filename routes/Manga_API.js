@@ -8,7 +8,7 @@ router.get('/list', async function(req, res) {
     res.json({ mangas: mangas});
   });
 router.get('/', function(req, res, next) {
-    res.render('index', { title: 'Welcome to BE traveloka' });
+    res.render('index', { title: 'Welcome to BE trave4t' });
   });
   
 module.exports = router;
